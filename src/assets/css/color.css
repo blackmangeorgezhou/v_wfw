@@ -1,0 +1,74 @@
+/* color */
+.color-f4516c {
+  color: #f4516c;
+}
+
+.color-409eff {
+  color: #409eff;
+}
+
+.color-13ce66 {
+  color: #13ce66
+}
+
+.color-606266 {
+  color: #606266
+}
+
+.color-e6a23c {
+  color: #e6a23c
+}
+
+.color-fff {
+  color: #ffffff
+}
+
+.color-909399 {
+  color: #909399
+}
+
+.bg-f8f8f8 {
+  background-color: #f8f8f8
+}
+
+.box-shadow-warning {
+  box-shadow: 0 0 1em #E6A23C
+}
+
+.box-shadow-success {
+  box-shadow: 0 0 1em #67C23A
+}
+
+.box-shadow-error {
+  box-shadow: 0 0 1em #F56C6C
+}
+
+.box-shadow-info {
+  box-shadow: 0 0 1em #909399
+}
+
+.box-shadow-question {
+  box-shadow: 0 0 1em #E6A23C
+}
+
+.no-data-msg {
+  line-height: 1.875rem;
+  font-size: 1.125rem
+}
+
+.bg-67C23A {
+  background-color: #67C23A !important
+}
+
+.bg-e6a23c {
+  background-color: #e6a23c !important
+}
+
+.bg-f0f9eb {
+  background-color: #f0f9eb
+}
+
+.bg-fdf6ec {
+  background-color: #fdf6ec
+}
+
