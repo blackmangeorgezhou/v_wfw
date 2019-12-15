@@ -15,7 +15,8 @@ export default {
 @import "./assets/css/color.css";
 
 #app {
-  font-family: 'Sim Hei';
+  /* font-family: 'Sim Hei'; */
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
