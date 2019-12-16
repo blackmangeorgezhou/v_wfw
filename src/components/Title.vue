@@ -70,6 +70,7 @@ export default {
 
 .header>span {
   display: inline-table;
+  white-space: nowrap span /* 不换行 */
 }
 
 .header>span:nth-child(1) {
