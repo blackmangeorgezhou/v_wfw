@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .icon_title {
   text-align: center;
-  color: #999;
+  color: #555;
   font-size: 15px;
   font-weight: 600;
 }

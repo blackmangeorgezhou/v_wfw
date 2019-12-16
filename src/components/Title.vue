@@ -26,20 +26,37 @@ export default {
   computed: {
     eleId () {
       return `${uuidv1()}`.replace(/-/g, '')
+    },
+
+    headerW () {
+      let eleHeader = document.getElementById(`header-${this.eleId}`)
+      return eleHeader ? eleHeader.clientWidth : 0
     }
   },
 
   mounted () {
-    let eleHeader = document.getElementById(`header-${this.eleId}`)
-    let eleSpan1 = document.getElementById(`span1-${this.eleId}`)
-    let eleSpan2 = document.getElementById(`span2-${this.eleId}`)
-    let eleSpan3 = document.getElementById(`span3-${this.eleId}`)
+    this.calculateSpanW()
+  },
 
-    const headerW = eleHeader.clientWidth
-    const span1W = eleSpan1.clientWidth
-    const span2W = eleSpan2.clientWidth
+  methods: {
+    calculateSpanW () {
+      let eleHeader = document.getElementById(`header-${this.eleId}`)
+      let eleSpan1 = document.getElementById(`span1-${this.eleId}`)
+      let eleSpan2 = document.getElementById(`span2-${this.eleId}`)
+      let eleSpan3 = document.getElementById(`span3-${this.eleId}`)
 
-    eleSpan3.style.width = `${headerW - span1W - span2W}px`
+      const headerW = eleHeader ? eleHeader.clientWidth : 0
+      const span1W = eleSpan1 ? eleSpan1.clientWidth : 0
+      const span2W = eleSpan2 ? eleSpan2.clientWidth : 0
+
+      eleSpan3.style.width = `${headerW - span1W - span2W}px`
+    }
+  },
+
+  watch: {
+    headerW () {
+      this.calculateSpanW()
+    }
   }
 }
 </script>
